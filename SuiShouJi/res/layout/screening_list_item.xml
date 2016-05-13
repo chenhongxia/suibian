@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="15dp"
+    android:gravity="left|center"
+    android:minHeight="50dip" >
+
+    <ImageView
+        android:id="@+id/id_treenode_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+       />
+
+    <TextView
+        android:id="@+id/id_treenode_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="@dimen/comm_top_title_size"
+        android:textColor="@color/color_2d2d2d"
+        android:text="123123123" />
+
+    <CheckBox
+        android:id="@+id/id_treeNode_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:visibility="gone"
+        android:button="@null"
+        android:focusable="false"
+        android:checked="false" />
+</LinearLayout>
