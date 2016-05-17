@@ -10,4 +10,7 @@
     <string name="str_attention">注意</string>
     <string name="str_cancel">取消</string>
     <string name="str_confirm">确定</string>
+    
+    <string name="str_time_set_finish_date">截止时间</string>
+      <string name="str_time_set_timing_date">定时时间</string>
 </resources>

@@ -1,9 +1,18 @@
 package com.example.suishouji;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import com.example.suishouji.control.CustomDialogControl;
+
+
+
+
+import com.example.suishouji.control.DatePickerControl;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -12,7 +21,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class MainActivity extends Activity {
+public class MainActivity extends FragmentActivity {
 
 	private EditText edMoney;
 	private LinearLayout llyClass;
@@ -22,6 +31,7 @@ public class MainActivity extends Activity {
 	private TextView tvMoneyStyle;
 	private EditText edTips;
 	private CustomDialogControl customDialogControl;
+	private DatePickerControl datePickerControl;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +55,7 @@ public class MainActivity extends Activity {
 
 	private void setValue() {
 		customDialogControl = new CustomDialogControl();
+		datePickerControl = new DatePickerControl(this);
 		
 	}
 
@@ -60,10 +71,14 @@ public class MainActivity extends Activity {
 		@Override
 		public void onClick(View v) {
 			if(v.getId() == R.id.lly_class){
-				customDialogControl.showSelectCustomControl(MainActivity.this, customDialogControl.initData());
+				/*customDialogControl.showSelectCustomControl(MainActivity.this, customDialogControl.initData());*/
+				datePickerControl.showDatePickerDialog();
 			}
 			
 		}
 		
 	}
+	
+	
+	
 }

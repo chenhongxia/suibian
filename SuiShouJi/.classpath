@@ -10,5 +10,6 @@
 	<classpathentry kind="lib" path="libs/httpclient-4.3.6.jar"/>
 	<classpathentry kind="lib" path="libs/ormlite-android-4.48.jar"/>
 	<classpathentry kind="lib" path="libs/ormlite-core-4.48.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
