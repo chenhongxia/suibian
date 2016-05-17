@@ -6,5 +6,9 @@
         <item name="android:windowFrame">@null</item>
         <item name="android:backgroundDimEnabled">true</item>
     </style>
-
+   <style name="popWindowAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_window_up</item>
+        <item name="android:windowExitAnimation">@anim/pop_window_down</item>
+    </style>
+    
 </resources>

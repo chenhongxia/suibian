@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tv_select_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="@drawable/bg_btn_green"
+            android:text="@string/str_finished"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_select_done"
+            android:orientation="horizontal" >
+
+            <com.example.suishouji.view.wheel.WheelView
+                android:id="@+id/wv_province_select"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.example.suishouji.view.wheel.WheelView
+                android:id="@+id/wv_city_select"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.example.suishouji.view.wheel.WheelView
+                android:id="@+id/wv_district_select"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

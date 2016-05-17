@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.support.v4.app.FragmentActivity;
 
+import com.example.suishouji.MainActivity;
 import com.example.suishouji.R;
 import com.example.suishouji.base.utils.ToastUtil;
 import com.example.suishouji.view.slidedatetimepicker.SlideDateTimeListener;
@@ -25,6 +26,17 @@ public class DatePickerControl {
 		super();
 		this.mContext = mContext;
 	}
+
+	
+	public long getEndTime() {
+		return endTime;
+	}
+
+
+	public void setEndTime(long endTime) {
+		this.endTime = endTime;
+	}
+
 
 	/**
 	 * 
@@ -70,6 +82,7 @@ public class DatePickerControl {
 		public void onDateTimeSet(Date date)
 		{
 			timingTime = date.getTime();
+			((MainActivity)mContext).setTimeTilte(getStringDate(timingTime));
 			ToastUtil.ToastLengthShort(mContext, "timingTime ==== "+ getStringDate(timingTime));
 		}
 

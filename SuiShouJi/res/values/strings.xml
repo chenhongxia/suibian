@@ -13,4 +13,6 @@
     
     <string name="str_time_set_finish_date">截止时间</string>
       <string name="str_time_set_timing_date">定时时间</string>
+      
+      <string name="str_finished">完成</string>
 </resources>
